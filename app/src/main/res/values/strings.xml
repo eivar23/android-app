@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ListasBD</string>
+    <string name="anime">Anime</string>
+    <string name="libros">Libros</string>
+    <string name="canciones">Canciones</string>
+    <string name="btn_lista">ver listado</string>
+    <string name="btn_ingresar">ingresar anime</string>
+    <string name="btn_eliminar">eliminar anime</string>
+    <string name="btn_listaC">listado de canciones</string>
+    <string name="btn_ingresarC">ingresar canción</string>
+    <string name="btn_eliminarC">eliminar canción</string>
+    <string name="btn_listaL">listado de libros</string>
+    <string name="btn_ingresarL">ingresar libro</string>
+    <string name="btn_eliminarL">eliminar libro</string>
+    <string name="txt_nombre_anime">Nombre del anime</string>
+    <string name="txt_tipo_anime">tipo del anime</string>
+    <string name="et_usuario">usuario</string>
+    <string name="et_correo">correo</string>
+    <string name="et_contraseña">contraseña</string>
+    <string name="title_activity_registro">registro</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="txt_mtitulo">Ecde</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

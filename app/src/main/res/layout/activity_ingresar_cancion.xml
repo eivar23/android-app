@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/oguitarra"
+    tools:context=".ingresarCancion">
+
+    <LinearLayout
+        android:layout_width="326dp"
+        android:layout_height="388dp"
+        android:background="#81FFFFFF"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.177">
+
+        <EditText
+            android:id="@+id/et_cancion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/aclonica"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            tools:text="nombre de la cancion" />
+
+        <Spinner
+            android:id="@+id/sp_genero"
+            android:layout_width="match_parent"
+            android:layout_height="37dp" />
+
+        <Spinner
+            android:id="@+id/sp_dificultad"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="#020202"
+            android:fontFamily="@font/aclonica"
+            android:onClick="ingresarCancion"
+            android:text="ENVIAR"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

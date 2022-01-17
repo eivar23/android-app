@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pilares_creacion"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="316dp"
+        android:layout_height="278dp"
+        android:layout_marginTop="36dp"
+        android:background="#72FBFBFB"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintVertical_bias="0.0">
+
+        <EditText
+            android:id="@+id/et_usuario_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/aclonica"
+            android:hint="@string/et_usuario"
+            android:inputType="textPersonName"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/et_pass_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/aclonica"
+            android:hint="@string/et_contraseña"
+            android:inputType="textPassword"
+            android:textColorHint="#000000" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="292dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/aclonica"
+            android:onClick="ingresar"
+            android:text="Ingresar"
+            android:textColorHint="#FFFFFF"
+            app:backgroundTint="#CE2A3649" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonica"
+            android:onClick="Registro"
+            android:text="Registrarse"
+            android:textColorHint="#FFFFFF"
+            app:backgroundTint="#C62A3649" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/aclonica"
+        android:hint="@string/txt_mtitulo"
+        android:text="ECDE"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FDFDFD"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

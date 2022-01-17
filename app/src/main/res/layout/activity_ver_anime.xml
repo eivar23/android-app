@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shinigami"
+    tools:context=".verAnime">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/aclonica"
+        android:text="LISTADO DE ANIME"
+        android:textColor="#FBFBFB"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:layout_width="291dp"
+        android:layout_height="395dp"
+        android:layout_marginTop="32dp"
+        android:background="#72FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.121">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="372dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="303dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/txt_animedes"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:text="TextView"
+                android:textColor="#040404"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_animetipo"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aclonica"
+                android:text="TextView"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

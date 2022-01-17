@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/orion"
+    tools:context=".Registrarse">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="334dp"
+        android:layout_height="333dp"
+        android:layout_marginTop="16dp"
+        android:animateLayoutChanges="false"
+        android:background="#81FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.074">
+
+        <EditText
+            android:id="@+id/et_reg_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/aclonica"
+            android:hint="@string/et_usuario"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/et_reg_correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/aclonica"
+            android:hint="@string/et_correo"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#020202" />
+
+        <EditText
+            android:id="@+id/pass_reg_contra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/aclonica"
+            android:hint="@string/et_contraseña"
+            android:inputType="textPassword"
+            android:textColorHint="#000000" />
+
+        <Button
+            android:id="@+id/btn_reg_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:fontFamily="@font/aclonica"
+            android:onClick="registraUsuario"
+            android:text="Registrarse"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:backgroundTint="#24293E" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center"
+            android:onClick="iniciarSesion"
+            android:text="iniciar sesión"
+            android:textColor="#132068"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/aclonica"
+        android:hint="@string/txt_mtitulo"
+        android:textColor="#FDF7F7"
+        android:textColorHint="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

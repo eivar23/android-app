@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen_0"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="338dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.064">
+
+        <Button
+            android:id="@+id/btn_ver_anime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/aclonica"
+            android:hint="@string/btn_lista"
+            android:onClick="verListadoAnime"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FDFDFD"
+            android:textSize="20sp"
+            app:backgroundTint="#953F51B5" />
+
+        <Button
+            android:id="@+id/btn_ingresar_anime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/aclonica"
+            android:hint="@string/btn_ingresar"
+            android:onClick="ingresarAnime"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FDFDFD"
+            android:textSize="20sp"
+            app:backgroundTint="#853F51B5" />
+
+        <Button
+            android:id="@+id/btn_eliminar_anime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/aclonica"
+            android:hint="@string/btn_eliminar"
+            android:onClick="eliminarAnime"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FDFDFD"
+            android:textSize="20sp"
+            app:backgroundTint="#8A3F51B5" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="209dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="ANIME"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FDFDFD"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
